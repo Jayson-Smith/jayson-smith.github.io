@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --profile-color: hsl(246, 80%, 60%);
+
+  --work-color: hsl(15, 100%, 70%);
+  --play-color: hsl(195, 74%, 62%);
+  --study-color: hsl(348, 100%, 68%);
+  --exercise-color: hsl(145, 58%, 55%);
+  --social-color: hsl(264, 64%, 52%);
+  --self-care-color: hsl(43, 84%, 65%);
+
+  --bg-color: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+
+  --off-white-color: hsl(0, 0%, 98%);
+  --white-color: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 3.2rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--white-color);
+  background-color: var(--bg-color);
+}
+
+.switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--desaturated-blue);
+  margin-bottom: 4rem;
+}
+
+.toggle {
+  position: relative;
+  content: "";
+  height: 3rem;
+  width: 6rem;
+  background: linear-gradient(
+    to right,
+    var(--play-color),
+    var(--exercise-color)
+  );
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.btn {
+  position: absolute;
+  content: "";
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: var(--dark-blue);
+  border-radius: 50%;
+  top: 50%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  transition: all 0.3s ease;
+}
+
+.dashboard {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 22.5rem);
+  gap: 3rem;
+}
+
+.profile {
+  grid-row: span 2;
+  border-radius: 15px;
+  color: var(--white-color);
+  box-shadow: 1.3rem 1rem 1rem rgba(0, 0, 0, 0.3);
+  background-color: var(--dark-blue);
+}
+
+.profile-details {
+  padding: 2.5rem;
+  border-radius: 15px;
+  background-color: var(--profile-color);
+}
+
+.profile-img {
+  height: 7rem;
+  width: 7rem;
+  border: 2px solid var(--white-color);
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+.report {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--pale-blue);
+  margin-bottom: 0.5rem;
+}
+
+.profile-for {
+  margin-bottom: 4rem;
+}
+
+.name {
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
+.profile-control {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2.5rem;
+  color: var(--desaturated-blue);
+}
+
+.radio {
+  display: none;
+}
+
+.radio:checked + .lbl {
+  color: var(--white-color);
+}
+
+.lbl {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.lbl:hover {
+  color: var(--white-color);
+}
+
+.box {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 1.3rem 1rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  height: 100%;
+}
+
+.work {
+  background-color: var(--work-color);
+}
+.play {
+  background-color: var(--play-color);
+}
+.study {
+  background-color: var(--study-color);
+}
+.exercise {
+  background-color: var(--exercise-color);
+}
+.social {
+  background-color: var(--social-color);
+}
+.self-care {
+  background-color: var(--self-care-color);
+}
+
+.card-img {
+  position: absolute;
+  right: 15px;
+  top: -15px;
+  transform: scale(0.9);
+}
+
+.card-img.reset {
+  top: -5px;
+}
+
+.card-content {
+  width: 100%;
+  padding: 2.5rem;
+  border-radius: 15px;
+  background-color: var(--dark-blue);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.card-content:hover {
+  background-color: hsl(236, 36%, 29%);
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.ellipsis {
+  height: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ellipsis:hover {
+  filter: brightness(130%);
+  transform: scale(1.2);
+}
+
+.current {
+  font-size: 5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.prev {
+  font-size: 1.5rem;
+  color: var(--pale-blue);
+}
+
+/* Light Mode Settings */
+
+body.light {
+  background-color: var(--off-white-color);
+  color: var(--profile-color);
+}
+
+body.light .btn {
+  transform: translate(115%, -50%);
+}
+
+body.light .profile {
+  background-color: var(--white-color);
+}
+
+body.light .profile-control {
+  color: var(--desaturated-blue);
+}
+
+body.light .radio:checked + .lbl {
+  color: var(--profile-color);
+}
+
+body.light .lbl:hover {
+  color: var(--profile-color);
+}
+
+body.light .card-content {
+  background-color: var(--white-color);
+}
+
+body.light .card-content:hover {
+  background-color: hsl(0, 0%, 93%);
+}
+
+body.light .ellipsis {
+  filter: brightness(50%);
+}
+
+body.light .ellipsis:hover {
+  filter: brightness(10%);
+}
+
+body.light .prev {
+  color: var(--dark-blue);
+  filter: brightness(200%);
+}

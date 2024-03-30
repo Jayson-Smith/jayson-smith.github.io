@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --lt-pink: hsl(275, 100%, 97%);
+  --lt-purple: hsl(292, 16%, 49%);
+  --hover-state: hsl(282, 68%, 50%);
+  --dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  height: 100dvh;
+  padding: 10rem 0;
+  line-height: 1;
+  font-weight: 400;
+  background-color: var(--lt-pink);
+}
+
+body::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 232px;
+  background: url("./assets/images/background-pattern-desktop.svg") no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 60rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.3);
+  color: var(--dark-purple);
+  border-radius: 15px;
+  background: var(--white);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding: 2.2rem 0;
+}
+
+.heading-primary {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+.accordion-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.accordion-item:not(:first-child) {
+  border-top: 1px solid var(--lt-pink);
+}
+
+.accordion-header.active .svg {
+  content: url("./assets/images/icon-minus.svg");
+}
+
+.accordion-header:not(.active) .svg {
+  content: url("./assets/images/icon-plus.svg");
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  color: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  padding: 2rem 0 0 0;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.accordion-header:hover {
+  color: var(--hover-state);
+}
+
+.accordion-panel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.3s;
+}
+
+.panel-opened {
+  margin-top: 2rem;
+  grid-template-rows: 1fr;
+}
+
+.accordion-panel > p {
+  overflow: hidden;
+}
+
+.accordion-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--lt-purple);
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap");
+/*
+
+--- 01 TYPOGRAPHY SYSTEM
+
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font Weights:
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line Heights:
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+Large: 1.8
+
+-Letter Spacing 
+-0.5px
+0.75px
+
+--- 02 COLORS
+
+- Primary:
+
+
+- Tints:
+
+- Shades:
+
+- Accents:
+
+- Greys:
+
+
+
+--- 05 SHADOWS
+
+box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
+box-shadow: 1rem 1.4rem 1.8rem rgba(0, 0, 0, 0.4);
+filter: drop-shadow(0px 4px 5px rgba(0, 0, 0, 0.4));
+box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+
+--- 06 BORDER-RADIUS
+
+Default: 5px
+Medium: 10px
+
+--- 07 WHITESPACE
+
+- Spacing System (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+:root {
+  --black: #000;
+
+  --off-white: hsl(0, 0%, 98%);
+  --dark-blue: hsla(239, 72%, 12%, 1);
+  --dark-purple: hsla(254, 83%, 35%, 1);
+  --blue: hsla(240, 65%, 44%, 1);
+  --lt-purple: hsla(266, 90%, 63%, 1);
+  --faded-purple: rgb(194, 157, 241);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  font-family: "Oxygen", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: var(--bg-color-lt);
+  overflow: hidden;
+}
+
+/*******************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*******************************/
+
+.dark-mode {
+  filter: invert(95%) hue-rotate(180deg);
+}
+
+.page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 500 500' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='8.58' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 80;
+}
+
+.tracking-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 90;
+}
+
+.tracking-line::before {
+  content: "";
+  position: absolute;
+  top: -200%;
+  left: -0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(0, 0, 0, 0.25) 50%,
+    transparent 100%
+  );
+  animation: tracking 5s linear infinite;
+}
+
+@keyframes tracking {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(200%);
+  }
+}
+
+.content {
+  position: relative;
+  margin: 3.2rem;
+  height: calc(100dvh - 6.4rem);
+  border: 1px solid var(--black);
+  overflow: hidden;
+  transition: top 1s ease;
+}
+
+.content::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    transparent 100%
+  );
+  filter: blur(5px);
+  z-index: 999;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0, 0, 0, 0.5) 50%,
+    transparent 100%
+  );
+  filter: blur(5px);
+  z-index: 999;
+}
+
+.section {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  transition: top 1s ease;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3.2rem 4.8rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.heading-five {
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.heading-primary {
+  font-size: 3.6rem;
+  margin-bottom: 0.4rem;
+}
+
+.heading-secondary {
+  font-size: 3rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.heading-five {
+  font-size: 1.6rem;
+}
+
+.span-1 {
+  grid-column: span 1;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
+
+.span-4 {
+  grid-column: span 4;
+}

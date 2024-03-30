@@ -1,0 +1,113 @@
+[
+  {
+    "title": "PersonalAIze Fitness",
+    "channel": "111",
+    "channelAbv": "psnlfit",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JS",
+      "year": "2023"
+    },
+    "description": "Unlock your ultimate fitness potential with PersonalAIze Fitness – where AI crafts customized workout and nutrition plans tailored just for you.",
+    "url": "/works/01-PersonalAIze_Fitness-Desktop/PersonalAIze_Fitness.html",
+    "img": "./img/works_preview/Personal_Fit_preview.png"
+  },
+  {
+    "title": "Blogr",
+    "channel": "112",
+    "channelAbv": "blogr",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JS",
+      "year": "2024"
+    },
+    "description": "Simplify your blogging experience with Blogr intuitive interface, empowering you to effortlessly create and manage content across multiple blogs.",
+    "url": "works/blogr-landing-page-main/blogr.html",
+    "img": "./img/works_preview/blogr_preview.png"
+  },
+  {
+    "title": "Expenses Chart",
+    "channel": "113",
+    "channelAbv": "expchrt",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JS",
+      "year": "2023"
+    },
+    "description": "Stay on top of your finances with ExpenseTracker, your go-to tool for monitoring your spending. Easily visualize and manage your expenses to make informed financial decisions.",
+    "url": "works/expenses-chart-component-main/expenses_chart.html",
+    "img": "./img/works_preview/expense_chart_preview.png"
+  },
+  {
+    "title": "Time Tracking",
+    "channel": "114",
+    "channelAbv": "ttrack",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JS",
+      "year": "2024"
+    },
+    "description": "LifeTrack offers a holistic approach to time management, allowing you to monitor and optimize every aspect of your life. Gain insights into how you spend your time across various activities, empowering you to prioritize effectively and achieve balance.",
+    "url": "works/time-tracking-dashboard-main/time_tracking.html",
+    "img": "./img/works_preview/time_tracking_preview.png"
+  },
+  {
+    "title": "Age Calculator",
+    "channel": "115",
+    "channelAbv": "agecalc",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JS",
+      "year": "2024"
+    },
+    "description": " Age calculation – just input your date of birth and instantly receive your current age. No hassle, no confusion, just straightforward results at your fingertips.",
+    "url": "works/age-calculator-app-main/age_calc.html",
+    "img": "./img/works_preview/age_calc_preview.png"
+  },
+  {
+    "title": "FAQ Accordion",
+    "channel": "116",
+    "channelAbv": "faqacc",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JS",
+      "year": "2024"
+    },
+    "description": "Our FAQ Accordion provides quick and easy access to answers. Simply click on a question to reveal the corresponding answer, streamlining your search for information.",
+    "url": "works/faq-accordion-main - v2 - Copy/faq_accordion.html",
+    "img": "./img/works_preview/faq_accordion_preview.png"
+  },
+  {
+    "title": "Results Summary",
+    "channel": "117",
+    "channelAbv": "resum",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "javascript": "JS",
+      "year": "2024"
+    },
+    "description": "A comprehensive assessment of your cognitive abilities, scoring your memory, reaction time, verbal fluency, and visual processing skills.",
+    "url": "works/results-summary-component-main/results_summary.html",
+    "img": "./img/works_preview/results_summary_preview.png"
+  },
+  {
+    "title": "Perfume Preview",
+    "channel": "118",
+    "channelAbv": "perview",
+    "tags": {
+      "html": "HTML",
+      "css": "CSS",
+      "year": "2023"
+    },
+    "description": "Indulge your senses with our tantalizing perfume preview card. Experience a captivating blend of exquisite scents that evoke sophistication and allure.",
+    "url": "works/product-preview-card-component-main/preview_card.html",
+    "img": "./img/works_preview/preview_card_preview.png"
+  }
+]

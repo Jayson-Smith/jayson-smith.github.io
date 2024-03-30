@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Time tracking dashboard</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body class="">
+    <main>
+      <div class="switch">
+        <p class="mode">Dark mode</p>
+        <div class="toggle">
+          <div class="btn"></div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <!-- card 1 -->
+        <div class="profile">
+          <div class="profile-details">
+            <img
+              class="profile-img"
+              src="./images/image-jeremy.png"
+              alt="Jeremy"
+            />
+            <h6 class="report">Report for</h6>
+            <div class="profile-for">
+              <p class="name name-first">Jeremy</p>
+              <p class="name name-last">Robson</p>
+            </div>
+          </div>
+          <div class="profile-control">
+            <input type="radio" class="radio" id="daily" name="radioBox" />
+            <label for="daily" class="lbl">Daily</label>
+
+            <input
+              type="radio"
+              class="radio"
+              id="weekly"
+              name="radioBox"
+              checked
+            />
+            <label for="weekly" class="lbl">Weekly</label>
+
+            <input type="radio" class="radio" id="monthly" name="radioBox" />
+            <label for="monthly" class="lbl">Monthly</label>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="box">
+          <div class="card work">
+            <img src="./images/icon-work.svg" alt="icon" class="card-img" />
+            <div class="card-content">
+              <div class="card-heading">
+                <p class="card-name">Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="ellipsis"
+                  alt="ellipsis"
+                />
+              </div>
+              <div class="card-hrs">
+                <p class="current"><span class="current-hrs">32</span>hrs</p>
+                <p class="prev">
+                  <span class="time-period">Last week</span> -
+                  <span class="prev-hrs">36</span>hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="box">
+          <div class="card play">
+            <img src="./images/icon-play.svg" alt="icon" class="card-img" />
+            <div class="card-content">
+              <div class="card-heading">
+                <p class="card-name">Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="ellipsis"
+                  alt="ellipsis"
+                />
+              </div>
+              <div class="card-hrs">
+                <p class="current"><span class="current-hrs">32</span>hrs</p>
+                <p class="prev">
+                  <span class="time-period">Last week</span> -
+                  <span class="prev-hrs">36</span>hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="box">
+          <div class="card study">
+            <img src="./images/icon-study.svg" alt="icon" class="card-img" />
+            <div class="card-content">
+              <div class="card-heading">
+                <p class="card-name">Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="ellipsis"
+                  alt="ellipsis"
+                />
+              </div>
+              <div class="card-hrs">
+                <p class="current"><span class="current-hrs">32</span>hrs</p>
+                <p class="prev">
+                  <span class="time-period">Last week</span> -
+                  <span class="prev-hrs">36</span>hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="box">
+          <div class="card exercise">
+            <img
+              src="./images/icon-exercise.svg"
+              alt="icon"
+              class="card-img reset"
+            />
+            <div class="card-content">
+              <div class="card-heading">
+                <p class="card-name">Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="ellipsis"
+                  alt="ellipsis"
+                />
+              </div>
+              <div class="card-hrs">
+                <p class="current"><span class="current-hrs">32</span>hrs</p>
+                <p class="prev">
+                  <span class="time-period">Last week</span> -
+                  <span class="prev-hrs">36</span>hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="box">
+          <div class="card social">
+            <img src="./images/icon-social.svg" alt="icon" class="card-img" />
+            <div class="card-content">
+              <div class="card-heading">
+                <p class="card-name">Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="ellipsis"
+                  alt="ellipsis"
+                />
+              </div>
+              <div class="card-hrs">
+                <p class="current"><span class="current-hrs">32</span>hrs</p>
+                <p class="prev">
+                  <span class="time-period">Last week</span> -
+                  <span class="prev-hrs">36</span>hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card 7 -->
+        <div class="box">
+          <div class="card self-care">
+            <img
+              src="./images/icon-self-care.svg"
+              alt="icon"
+              class="card-img"
+            />
+            <div class="card-content">
+              <div class="card-heading">
+                <p class="card-name">Work</p>
+                <img
+                  src="./images/icon-ellipsis.svg"
+                  class="ellipsis"
+                  alt="ellipsis"
+                />
+              </div>
+              <div class="card-hrs">
+                <p class="current"><span class="current-hrs">32</span>hrs</p>
+                <p class="prev">
+                  <span class="time-period">Last week</span> -
+                  <span class="prev-hrs">36</span>hrs
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
