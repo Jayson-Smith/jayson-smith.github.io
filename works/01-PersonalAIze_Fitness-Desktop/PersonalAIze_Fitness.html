@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+
+    <title>PersonalAIzed Fitness</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <a href="#">
+        <p class="logo">PersonalAIzed Fitness</p>
+      </a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#how" class="main-nav-link">How it works</a></li>
+          <li><a href="#workout" class="main-nav-link">Workouts</a></li>
+          <li><a href="#meal" class="main-nav-link">Meals</a></li>
+          <li><a href="#testimonial" class="main-nav-link">Testimonials</a></li>
+          <li><a href="#pricing" class="main-nav-link">Pricing</a></li>
+          <li>
+            <a href="#cta" class="main-nav-link nav-cta">Start Journey</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Discover Your Fitness Story: Personalized for Every Step
+            </h1>
+            <p class="hero-description">
+              Say goodbye to generic workout plans and one-size-fits-all
+              approaches. Step into the future of fitness with our revolutionary
+              AI-powered platform that tailors fitness programs to your
+              individual needs, goals, and lifestyle.
+            </p>
+
+            <a href="#cta" class="btn btn--full margin-right-sm"
+              >Start Your Journey Today</a
+            >
+            <a href="#how" class="btn btn--outline">Learn more &darr;</a>
+
+            <div class="customer-journey">
+              <div class="customer-img">
+                <img src="img/customers/customer-1.jpg" alt="Customer img" />
+                <img src="img/customers/customer-2.jpg" alt="Customer img" />
+                <img src="img/customers/customer-3.jpg" alt="Customer img" />
+                <img src="img/customers/customer-4.jpg" alt="Customer img" />
+                <img src="img/customers/customer-5.jpg" alt="Customer img" />
+                <img src="img/customers/customer-6.jpg" alt="Customer img" />
+              </div>
+              <p class="customer-text">
+                <span>50,000+</span> people have started their journey!
+              </p>
+            </div>
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="img/Hero1.png"
+              alt="Image of multiple people doing different types of exercises"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- How it Works Section -->
+      <section class="section-how" id="how">
+        <div class="container">
+          <span class="subheading">Features</span>
+          <h2 class="heading-secondary">Unleash Your Fitness Potential With</h2>
+        </div>
+        <div class="container grid grid--2-cols center-v">
+          <!-- FEATURE 1 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-tertiary">AI-Personalized Workouts</h3>
+            <p class="step-description">
+              Experience workouts like never before with our AI-powered
+              personalization. Our algorithms analyze your fitness level,
+              preferences, and goals to create a customized workout plan
+              tailored to your needs. Say goodbye to generic routines and hello
+              to workouts designed exclusively for you.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/logos/undraw_healthy_habit_kwe6.svg"
+              alt="Iphone app displaying the create your profile screen"
+              class="step-img"
+            />
+          </div>
+          <!-- FEATURE 2 -->
+          <div class="step-img-box">
+            <img
+              src="img/logos/tracker.svg"
+              alt="Iphone app displaying the create your profile screen"
+              class="step-img"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-tertiary">Real-Time Progress Tracking</h3>
+            <p class="step-description">
+              Stay on top of your progress with real-time tracking. Our AI
+              continually monitors your achievements, providing valuable
+              insights and performance feedback. Celebrate your milestones,
+              witness improvements, and make data-driven decisions for even
+              better results.
+            </p>
+          </div>
+          <!-- FEATURE 3 -->
+          <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-tertiary">Adaptive Training Plans</h3>
+            <p class="step-description">
+              Life can be unpredictable, but your fitness plan doesn't have to
+              be. Our platform adapts to your changing circumstances, adjusting
+              workouts to accommodate busy schedules, injuries, or new
+              objectives. Your fitness journey is as flexible as you need it to
+              be.
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              src="img/logos/adjust-training.svg"
+              alt="Iphone app displaying the create your profile screen"
+              class="step-img"
+            />
+          </div>
+          <!-- FEATURE 4 -->
+          <div class="step-img-box">
+            <img
+              src="img/logos/nutrition-guidance.svg"
+              alt="Iphone app displaying the create your profile screen"
+              class="step-img"
+            />
+          </div>
+          <div class="step-text-box">
+            <p class="step-number">04</p>
+            <h3 class="heading-tertiary">Intelligent Nutrition Guidance</h3>
+            <p class="step-description">
+              Fitness is more than just workouts; it's also about nourishing
+              your body. Receive personalized nutrition guidance based on your
+              goals and dietary preferences. Our AI-powered recommendations help
+              you make better food choices to support your fitness aspirations.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Workouts Section -->
+      <section class="section-workout" id="workout">
+        <div class="container">
+          <span class="subheading">Workouts</span>
+          <h2 class="heading-secondary">
+            Sneak Peek: Your Fitness Journey Begins Here
+          </h2>
+        </div>
+        <div class="container grid grid--3-cols margin-bottom-md">
+          <!-- Workout 1 -->
+          <div class="workouts">
+            <img
+              src="img/workout/circuit.jpg"
+              alt="Person doing some bicep curls"
+              class="workout-img"
+            />
+            <div class="workout-container">
+              <div class="tags">
+                <span class="tag tag--dumbbell">Dumbbell</span>
+                <span class="tag tag--kettlebell">Kettlebell</span>
+              </div>
+              <p class="workout-title">Full Body Circuit</p>
+              <ul class="workout-attributes">
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="barbell-outline"
+                  ></ion-icon>
+                  <span>Strength Training</span>
+                </li>
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="alarm-outline"
+                  ></ion-icon>
+                  <span><strong>45</strong> minutes</span>
+                </li>
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="bar-chart-outline"
+                  ></ion-icon>
+                  <span>Moderate to High</span>
+                </li>
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="flame-outline"
+                  ></ion-icon>
+                  <span><strong>300-400</strong> calories</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Workout 2 -->
+          <div class="workouts">
+            <img
+              src="img/workout/gental.jpg"
+              alt="Person doing some bicep curls"
+              class="workout-img"
+            />
+            <div class="workout-container">
+              <div class="tags">
+                <span class="tag tag--no-equip">No Equipment</span>
+              </div>
+              <p class="workout-title">Gentle Morning Flow</p>
+              <ul class="workout-attributes">
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="barbell-outline"
+                  ></ion-icon>
+                  <span>Low Impact</span>
+                </li>
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="alarm-outline"
+                  ></ion-icon>
+                  <span><strong>20</strong> minutes</span>
+                </li>
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="bar-chart-outline"
+                  ></ion-icon>
+                  <span>Low</span>
+                </li>
+                <li class="workout-attribute">
+                  <ion-icon
+                    class="workout-icon"
+                    name="flame-outline"
+                  ></ion-icon>
+                  <span><strong>100-150</strong> calories</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="workout-types">
+            <h3 class="heading-tertiary">All types of training</h3>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Cardiovascular</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Strength</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>High-Intensity Interval</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Flexibility and Mobility</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Functional</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Dance and Aerobics</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Sports-Specific</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Mind-Body</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Low-Impact</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>And More</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container more-workouts">
+          <a href="#" class="link">View more workouts &rarr;</a>
+        </div>
+      </section>
+      <!-- Meal Section -->
+      <section class="section-meal" id="meal">
+        <div class="container">
+          <span class="subheading">Meals</span>
+          <h2 class="heading-secondary">
+            Nutrition and Recipes: Fueling Your Success
+          </h2>
+        </div>
+        <div class="container grid meal-grid">
+          <div class="meal-text-box">
+            <h3 class="heading-tertiary">Delicious and Nutritious Recipes</h3>
+            <p class="meal-description">
+              Elevate your fitness journey with the power of personalized
+              nutrition. Discover how our platform's personalized nutrition
+              plans and delicious recipes can optimize your results and support
+              your overall well-being.
+            </p>
+            <a href="#" class="btn meal-cta"
+              >Discover Nutritional Excellence Today!</a
+            >
+          </div>
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img src="img/gallery/gallery-4.jpg" alt="" class="meal-img" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="img/gallery/gallery-2.jpg" alt="" class="meal-img" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="img/gallery/gallery-8.jpg" alt="" class="meal-img" />
+            </figure>
+            <figure class="gallery-item">
+              <img src="img/gallery/gallery-1.jpg" alt="" class="meal-img" />
+            </figure>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="gallery-dots">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Testimonial Section -->
+      <section class="section-testimonial" id="testimonial">
+        <div class="testimonial-container">
+          <span class="subheading subheading--lite">Testimonials</span>
+          <h2 class="heading-secondary heading-secondary--lite">
+            Success Stories Made Personal
+          </h2>
+          <div class="testimonial-text-box ttb-show" id="testimonial-box-1">
+            <blockquote class="testimonial-text">
+              During my pregnancy, staying fit and healthy was my top priority.
+              PersonalAIze Fitness made it easy and safe for me. The prenatal
+              workouts were tailored to my changing needs, and the virtual coach
+              offered valuable guidance throughout. I felt empowered and
+              supported, and I credit PersonalAIze Fitness for my smooth
+              pregnancy journey!
+            </blockquote>
+            <p class="testimonial-name">Jennifer W. &dash; Prenatal Fitness</p>
+          </div>
+          <div class="testimonial-text-box" id="testimonial-box-2">
+            <blockquote class="testimonial-text">
+              Being a sports enthusiast, I needed a workout program that aligns
+              with my athletic goals. PersonalAIze Fitness delivered just that.
+              The sports-specific workouts have enhanced my performance on the
+              field, and the adaptive training plans help me recover after
+              intense games. The AI insights have taken my training to a whole
+              new level, and I can't imagine my fitness routine without it!
+            </blockquote>
+            <p class="testimonial-name">John K. &dash; Sports Enthusiast</p>
+          </div>
+          <div class="testimonial-text-box" id="testimonial-box-3">
+            <blockquote class="testimonial-text">
+              I was always hesitant to start a fitness journey because I felt
+              overwhelmed by the generic workout plans out there. Then I
+              discovered PersonalAIze Fitness, and it changed everything. The
+              beginner-friendly workouts and clear instructions made me feel
+              confident from day one. The platform progresses with me as I
+              improve, and the community support keeps me inspired.
+            </blockquote>
+            <p class="testimonial-name">Lisa D. &dash; Fitness Beginner</p>
+          </div>
+          <div class="testimonial-text-box" id="testimonial-box-4">
+            <blockquote class="testimonial-text">
+              As a senior, finding a fitness program that caters to my needs was
+              a challenge. PersonalAIze Fitness proved that age is just a
+              number. The low-impact exercises and gradual progressions have
+              allowed me to maintain my health and mobility. The AI support
+              ensures I'm on the right track, and I feel stronger and more
+              energized than ever before!
+            </blockquote>
+            <p class="testimonial-name">Mark T. &dash; Seniors Fitness</p>
+          </div>
+          <div class="testimonial-text-box" id="testimonial-box-5">
+            <blockquote class="testimonial-text">
+              As a busy professional, finding time for fitness was always a
+              challenge. But PersonalAIze Fitness changed the game for me. The
+              platform adapts my workouts to fit my hectic schedule, ensuring I
+              never miss a beat. The AI-generated nutrition plan has helped me
+              make better food choices, and the gamification keeps me motivated
+              and engaged. It's like having a personal trainer in my pocket!
+            </blockquote>
+            <p class="testimonial-name">Mike R. &dash; Busy Professional</p>
+          </div>
+          <div class="testimonial-text-box" id="testimonial-box-6">
+            <blockquote class="testimonial-text">
+              PersonalAIze Fitness has completely transformed the way I approach
+              my workouts. The personalized workout plans keep me motivated, and
+              I love the variety of exercises it offers. The real-time feedback
+              from the virtual coach helps me maintain proper form, and the
+              integration with my fitness devices makes tracking my progress a
+              breeze.
+            </blockquote>
+            <p class="testimonial-name">Sarah M. &dash; Fitness Enthusiast</p>
+          </div>
+        </div>
+        <div class="testimonial-imgs">
+          <!-- <figure class="testimonial-item">
+            <div class="img-container" id="jennifer">
+              <div class="inner-container"></div>
+            </div>
+          </figure> -->
+          <!-- testimonial 1 -->
+          <figure class="testimonial-item">
+            <div
+              class="img-container testimonial-active"
+              data-testimonial-id="testimonial-box-1"
+            >
+              <img
+                src="img/customers/JenniferW.jpg"
+                alt="picture of jennifer"
+                class="testimonial-img"
+              />
+              <div class="inner-container"></div>
+            </div>
+          </figure>
+          <!-- testimonial 2 -->
+          <figure class="testimonial-item">
+            <div class="img-container" data-testimonial-id="testimonial-box-2">
+              <img
+                src="img/customers/JohnK.jpg"
+                alt="picture of john"
+                class="testimonial-img"
+              />
+              <div class="inner-container"></div>
+            </div>
+          </figure>
+          <!-- testimonial 3 -->
+          <figure class="testimonial-item">
+            <div class="img-container" data-testimonial-id="testimonial-box-3">
+              <img
+                src="img/customers/lisaD.jpg"
+                alt="picture of lisa"
+                class="testimonial-img"
+              />
+              <div class="inner-container"></div>
+            </div>
+          </figure>
+          <!-- testimonial 4 -->
+          <figure class="testimonial-item">
+            <div class="img-container" data-testimonial-id="testimonial-box-4">
+              <img
+                src="img/customers/markT.jpg"
+                alt="picture of mark"
+                class="testimonial-img"
+              />
+              <div class="inner-container"></div>
+            </div>
+          </figure>
+          <!-- testimonial 5 -->
+          <figure class="testimonial-item">
+            <div class="img-container" data-testimonial-id="testimonial-box-5">
+              <img
+                src="img/customers/MikeR.jpg"
+                alt="picture of mike"
+                class="testimonial-img"
+              />
+              <div class="inner-container"></div>
+            </div>
+          </figure>
+          <!-- testimonial 6 -->
+          <figure class="testimonial-item">
+            <div class="img-container" data-testimonial-id="testimonial-box-6">
+              <img
+                src="img/customers/SarahM.jpg"
+                alt="picture of sarah"
+                class="testimonial-img"
+              />
+              <div class="inner-container"></div>
+            </div>
+          </figure>
+        </div>
+      </section>
+      <!-- Pricing Section -->
+      <section class="section-pricing" id="pricing">
+        <div class="container">
+          <span class="subheading">Pricing</span>
+          <h2 class="heading-secondary">
+            Fitness Made Affordable: Find Your Ideal Plan
+          </h2>
+        </div>
+
+        <div class="container center-text">
+          <div class="btn-toggle">
+            <span class="payment-type">Monthly</span>
+            <label for="checkbox" class="switch">
+              <input type="checkbox" id="checkbox" onclick="check()" />
+              <span class="slider round"></span>
+            </label>
+            <span class="payment-type">Annually</span>
+          </div>
+        </div>
+
+        <div class="container grid grid--2-cols margin-bottom-md">
+          <!-- Pricing 1 -->
+          <div class="pricing pricing--starter">
+            <header class="plan-header">
+              <p class="pricing-title pricing-title--starter">Starter</p>
+              <p class="price month"><span>$</span>9.99</p>
+              <p class="price year"><span>$</span>99.99</p>
+              <p class="pricing-description month">
+                per month. That's just $120 per year!
+              </p>
+              <p class="pricing-description year">
+                per year. That's just $8.33 per month!
+              </p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Personalized workouts</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Nutrition planning</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Full community support</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="close-outline"></ion-icon
+                ><span></span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#cta" class="btn btn--price-starter"
+                >Start your journey</a
+              >
+            </div>
+          </div>
+          <!-- Pricing 2 -->
+          <div class="pricing pricing--premium">
+            <header class="plan-header">
+              <p class="pricing-title">Premium</p>
+              <p class="price price--premium month"><span>$</span>19.99</p>
+              <p class="price price--premium year"><span>$</span>199.99</p>
+              <p class="pricing-description month">
+                per month. That's just $240 per year!
+              </p>
+              <p class="pricing-description year">
+                per year. That's just $16.66 per month!
+              </p>
+            </header>
+            <ul class="list">
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Advanced personalized workouts</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Advanced nutrition planning</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Full community support</span>
+              </li>
+              <li class="list-item">
+                <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+                ><span>Virtual coach</span>
+              </li>
+            </ul>
+            <div class="plan-sign-up">
+              <a href="#cta" class="btn btn--full">Start your journey</a>
+            </div>
+          </div>
+        </div>
+        <div class="container grid center-text">
+          <p class="pricing-info">
+            Prices include all applicable taxes. You can cancel at any time.
+            Both plans include the following:
+          </p>
+        </div>
+        <div class="container grid grid--3-cols">
+          <div class="features">
+            <ion-icon class="feature-icon" name="person-outline"></ion-icon>
+            <p class="feature-title">Create Your Profile</p>
+            <p class="feature-text">
+              Kickstart your personalized fitness journey by creating your
+              profile. Tell us about your fitness level, health history, goals,
+              and preferences.
+            </p>
+          </div>
+          <div class="features">
+            <ion-icon class="feature-icon" name="barbell-outline"></ion-icon>
+            <p class="feature-title">Receive Tailored Workouts</p>
+            <p class="feature-text">
+              Get ready for workouts and nutrition plans designed exclusively
+              for you. Your plan includes tailored exercises and dietary
+              recommendations.
+            </p>
+          </div>
+          <div class="features">
+            <ion-icon class="feature-icon" name="clipboard-outline"></ion-icon>
+            <p class="feature-title">Real-Time Guidance</p>
+            <p class="feature-text">
+              Stay motivated and on track with real-time guidance and feedback
+              from our virtual fitness companion. We're here to support you.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- CTA Section -->
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">
+                Your Personalized Fitness Journey Awaits!
+              </h2>
+              <p class="cta-text">
+                Embark on your personalized fitness journey today with
+                PersonalAIze Fitness! Sign up now to experience the future of
+                fitness!
+              </p>
+              <form class="cta-form" action="">
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="select-where">Where did you hear about us?</label>
+                  <select name="" id="select-where">
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="man lifting a Kettlebell"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container grid grid--footer">
+        <!-- Col 1 -->
+        <div class="logo-col">
+          <a href="#" class="footer-logo">
+            <p class="logo">PersonalAIzed Fitness</p>
+          </a>
+          <ul class="social-links">
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li>
+              <a class="footer-link" href="#"
+                ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+          </ul>
+          <p class="copyright">
+            Copyright &copy; 2027 by PersonalAIzed Fitness, Inc. All rights
+            reserved.
+          </p>
+        </div>
+        <!-- Col 2 -->
+        <div class="address-col">
+          <p class="footer-heading">Contact us</p>
+          <address class="contacts">
+            <p class="address">
+              623 Harrison St., 2nd Floor, San Francisco, CA 94107
+            </p>
+            <p class="contact-info">
+              <a href="tel:415-201-6370" class="footer-link">415-201-6370</a>
+              <a
+                href="mailto:hello@PersonalAIzed_Fitness.com"
+                class="footer-link"
+                >hello@PersonalAIzed_Fitness.com</a
+              >
+            </p>
+          </address>
+        </div>
+        <!-- Col 3 -->
+        <nav class="nav-col">
+          <p class="footer-heading">Account</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Create account</a></li>
+            <li><a class="footer-link" href="#">Sign in</a></li>
+            <li><a class="footer-link" href="#">iOS app</a></li>
+            <li><a class="footer-link" href="#">Android app</a></li>
+          </ul>
+        </nav>
+        <!-- Col 4 -->
+        <nav class="nav-col">
+          <p class="footer-heading">Company</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">About us</a></li>
+            <li><a class="footer-link" href="#">For Business</a></li>
+            <li><a class="footer-link" href="#">Partners</a></li>
+            <li><a class="footer-link" href="#">Careers</a></li>
+          </ul>
+        </nav>
+        <!-- Col 5 -->
+        <nav class="nav-col">
+          <p class="footer-heading">Resources</p>
+          <ul class="footer-nav">
+            <li><a class="footer-link" href="#">Exercise directory</a></li>
+            <li><a class="footer-link" href="#">Recipe directory</a></li>
+            <li><a class="footer-link" href="#">Help center</a></li>
+            <li><a class="footer-link" href="#">Privacy & terms</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

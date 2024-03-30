@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+:root {
+  --primary-color-purple: hsl(259, 100%, 65%);
+  --primary-color-red: hsl(0, 100%, 67%);
+
+  --neutral-color-white: hsl(0, 0%, 100%);
+  --neutral-color-off-white: hsl(0, 0%, 94%);
+  --neutral-color-lt-grey: hsl(0, 0%, 86%);
+  --neutral-color-smokey-grey: hsl(0, 1%, 44%);
+  --neutral-color-off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+  height: 100vh;
+  line-height: 1;
+  font-weight: 700;
+  background-color: var(--neutral-color-lt-grey);
+}
+
+*:focus {
+  outline-color: var(--primary-color-purple);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  padding: 4rem;
+  border-radius: 15px;
+  border-bottom-right-radius: 150px;
+  background-color: var(--neutral-color-white);
+}
+
+.form {
+  display: flex;
+  gap: 2rem;
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.main-lbl {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: var(--neutral-color-smokey-grey);
+}
+
+.input {
+  font-family: inherit;
+  font-size: 2.6rem;
+  font-weight: 700;
+  width: 12rem;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--neutral-color-lt-grey);
+  border-radius: 5px;
+}
+
+.error-lbl {
+  color: var(--primary-color-red);
+  font-size: 0.8rem;
+  font-family: inherit;
+  font-weight: 400;
+  font-style: italic;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-btn {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  top: -15px;
+  margin-bottom: 3rem;
+}
+
+.form-btn::before {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  border-top: 2px solid var(--neutral-color-off-white);
+}
+
+.btn {
+  display: block;
+  height: 6rem;
+  width: 6rem;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--primary-color-purple);
+  cursor: pointer;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  box-shadow: 0 0 0 1rem hsla(259, 100%, 65%, 0.235);
+}
+
+.btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heading-secondary {
+  font-size: 7.2rem;
+  font-weight: 800;
+  font-style: italic;
+  line-height: 1.1;
+  color: var(--neutral-color-off-black);
+}
+
+.num {
+  color: var(--primary-color-purple);
+}
+
+.active {
+  color: var(--primary-color-red);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="script.js"></script>
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <form action="">
+          <div class="form">
+            <div class="form-input">
+              <label for="day" class="main-lbl">Day</label>
+              <input id="day" class="input" type="text" placeholder="DD" />
+              <label for="day" class="error-lbl">This field is required</label>
+            </div>
+            <div class="form-input">
+              <label for="month" class="main-lbl">Month</label>
+              <input id="month" class="input" type="text" placeholder="MM" />
+              <label for="month" class="error-lbl"
+                >This field is required</label
+              >
+            </div>
+            <div class="form-input">
+              <label for="year" class="main-lbl">Year</label>
+              <input id="year" class="input" type="text" placeholder="YYYY" />
+              <label for="year" class="error-lbl">This field is required</label>
+            </div>
+          </div>
+          <div class="form-btn">
+            <button class="btn">
+              <img src="./assets/images/icon-arrow.svg" alt="arrow" />
+            </button>
+          </div>
+        </form>
+        <div class="results">
+          <h2 class="heading-secondary">
+            <span id="num-year" class="num">- -</span> years
+          </h2>
+          <h2 class="heading-secondary">
+            <span id="num-month" class="num">- -</span> months
+          </h2>
+          <h2 class="heading-secondary">
+            <span id="num-day" class="num">- -</span> days
+          </h2>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
