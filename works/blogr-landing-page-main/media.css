@@ -1,0 +1,184 @@
+@media screen and (max-width: 1400px) {
+  .mar-left {
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  /* GENERAL */
+
+  .mar-right {
+    margin-right: 0;
+  }
+
+  .mar-left {
+    margin-left: 0;
+  }
+
+  .mar-top {
+    margin-top: 0;
+  }
+
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heading-secondary {
+    order: 1;
+    margin-bottom: 2rem;
+  }
+
+  /* FUTURE */
+
+  .future {
+    margin-top: 2rem;
+  }
+
+  .text-box {
+    order: 3;
+  }
+
+  .img-box {
+    order: 2;
+    position: inherit;
+    margin-bottom: 3rem;
+  }
+
+  /* INF */
+
+  .infrastructure {
+    padding: 33rem 0 10rem;
+    margin-bottom: 5rem;
+    background-position: center top;
+  }
+
+  .inf-img-box {
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* END */
+
+  .future-end {
+    padding: 5rem 0 12rem;
+  }
+
+  .end-img-box {
+    position: inherit;
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  /* HEADER */
+
+  .header {
+    display: none;
+  }
+
+  .header-modile {
+    display: flex;
+  }
+
+  /* FOOTER */
+  .grid-4 {
+    grid-template-columns: inherit;
+    text-align: center;
+    gap: 5rem;
+  }
+
+  .footer-heading {
+    font-size: 1.8rem;
+  }
+
+  .footer-ul {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .header-hero-container {
+    background-image: url("images/bg-pattern-intro-mobile.svg"),
+      linear-gradient(
+        to bottom,
+        var(--gradient-intro-start),
+        var(--gradient-intro-end)
+      );
+    background-size: 320%, cover;
+    background-position: 35% 29%, center;
+  }
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .heading-description {
+    font-size: 1.9rem;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+  }
+
+  .heading-ters {
+    font-size: 2.9rem;
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+
+  /* INF */
+
+  .infrastructure {
+    padding: 25rem 0 10rem;
+  }
+
+  .inf-img-box {
+    transform: translate(-70%, -50%);
+  }
+
+  .inf-img-box img {
+    width: 150%;
+  }
+  .heading-inf {
+    font-size: 4rem;
+  }
+
+  .text-inf {
+    font-size: 1.8rem;
+  }
+
+  /* END */
+
+  .future-end {
+    padding-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .img-box {
+    width: 120%;
+  }
+
+  .future {
+    margin-bottom: 7rem;
+  }
+
+  /* INF */
+
+  .infrastructure {
+    padding: 20rem 0 10rem;
+    background-position: 50% -120%;
+    background-size: 110%, cover;
+  }
+}
