@@ -2,11 +2,25 @@
 Instead, 1rem = 1em = 16px */
 
 /*******************************/
-/* BELOW 1344px (Smaller desktops) */
+/* BELOW 1408px (Smaller desktops) */
 /*******************************/
 
-@media (max-width: 84em) {
+@media (max-width: 88em) {
+  .home-content {
+    grid-template-columns: 1fr 2fr;
+  }
 
+  .works-grid {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .work-description {
+    grid-column: span 1;
+  }
+
+  .description-text-box {
+    margin-left: 10rem;
+  }
 }
 
 /*******************************/
@@ -14,7 +28,22 @@ Instead, 1rem = 1em = 16px */
 /*******************************/
 
 @media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
 
+  .img-container {
+    height: 125px;
+    width: 125px;
+  }
+
+  .channel-date-time {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .channel {
+    grid-template-columns: repeat(5, 1fr);
+  }
 }
 
 /*******************************/
@@ -22,11 +51,7 @@ Instead, 1rem = 1em = 16px */
 /*******************************/
 
 @media (max-width: 62em) {
-
-
   /* MOBILE NAVIGATION */
-
-
 }
 
 /*******************************/
@@ -34,7 +59,6 @@ Instead, 1rem = 1em = 16px */
 /*******************************/
 
 @media (max-width: 46em) {
- 
 }
 
 /*******************************/
@@ -42,6 +66,4 @@ Instead, 1rem = 1em = 16px */
 /*******************************/
 
 @media (max-width: 38em) {
-  
 }
-

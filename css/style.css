@@ -106,6 +106,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   padding: 0 3rem;
+  margin: 0 auto;
 }
 
 .img-container {
@@ -344,8 +345,10 @@
 }
 
 .preview-img {
-  max-height: 600px;
+  height: 100%;
   padding: 3.2rem;
+  display: flex;
+  place-items: center;
 }
 
 .preview-img img {
